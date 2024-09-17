@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <script src="index.js"></script>
     <title>Bookmark Landing Page</title>
 </head>
 <body>
     <nav>
-        <img src="./assets/logo-bookmark.svg"></img>
+        <div>
+            <img src="./assets/logo-bookmark.svg"></img>
+        </div>
         <div>
             <div id="burger-menu">
                 <img src="./assets/icon-hamburger.svg" alt="">
             </div>
+            <div class="nav-links-mobile">
+                <div>
+                    <div>
+                        <img src="./assets/logo-bookmark.png" alt="">
+                        <img src="./assets/icon-close.svg" id="close-btn">
+                    </div>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Contact</a>
+                    <button id="login-btn">Login</button>
+                </div>
+                <div class="icons">
+                    <img src="./assets/icon-facebook.svg" alt="facebook-icon">
+                    <img src="./assets/icon-twitter.svg" alt="twitter-icon">
+                </div>
+            </div>
+
             <div class="nav-links">
                 <a href="#">Features</a>
                 <a href="#">Pricing</a>
@@ -30,11 +52,11 @@
                 A clean and simple interface to organize your favourite websites. Open a new 
                 browser tab and see your sites load instantly. Try it for free.
             </p>
-            <div>
-                <button>
+            <div class="buttons">
+                <button class="primary-btn">
                     Get it on Chrome
                 </button>
-                <button>
+                <button class="secondary-btn">
                     Get it on Firefox
                 </button>
             </div>
@@ -55,46 +77,147 @@
         </div>
 
         <div class="list-tabs">
-            <div onclick="changeTabContent">Simple Bookmarking</div>
-            <div onclick="changeTabContent">Speedy Searching</div>
-            <div onclick="changeTabContent">Easy Sharing</div>
+            <div>Simple Bookmarking</div>
+            <div>Speedy Searching</div>
+            <div>Easy Sharing</div>
         </div>
 
         <div class="features-content">
             <div class="features-photo">
-                <img src={feature-img} alt={feature-img-alt}>
+                <img src="./assets/illustration-features-tab-1.svg" alt="">
                 <div id="feature-section-purple-blob"></div>
             </div>
             <div class="features-description">
-                <h3>{feature-header}</h3>
-                <p>{feature-desc}</p>
-                <button>More info</button>
+                <h3>Bookmark in one click</h3>
+                <p>
+                    Organize your bookmarks however you like. 
+                    Our simple drag-and-drop interface gives you 
+                    complete control over how you manage your favourite 
+                    sites.
+                </p>
+                <button class="primary-btn">More info</button>
             </div>
         </div>
     </section>
 
     <section id="download-extention">
-
+        <div class="section-header">
+            <h2>Download the extension</h2>
+            <p>
+                We've got more browsers in the pipeline. Please do let us know if you've 
+                got a favourite you'd like us to prioritize.
+            </p>
+        </div>
+        <div class="browser-cards">
+            <div>
+                <div>
+                    <img src="assets/logo-chrome.svg" alt="chrome">
+                    <h3>Add to Chrome</h3>
+                    <p>Minimum version 62</p>
+                </div>
+                <img src="./assets/bg-dots.svg">  
+                <button class="primary-btn">Add & Install Extension</button> 
+            </div>    
+            <div>
+                <div>
+                    <img src="assets/logo-firefox.svg" alt="firefox">
+                    <h3>Add to Firefox</h3>
+                    <p>Minimum version 55</p>
+                </div>
+                <img src="./assets/bg-dots.svg">  
+                <button class="primary-btn">Add & Install Extension</button> 
+            </div>  
+            <div>
+                <div>
+                    <img src="assets/logo-opera.svg" alt="opera">
+                    <h3>Add to Opera</h3>
+                    <p>Minimum version 46</p>
+                </div>
+                <img src="./assets/bg-dots.svg">  
+                <button class="primary-btn">Add & Install Extension</button> 
+            </div>      
+        </div>
     </section>
 
     <section id="faq">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+                Here are some of our FAQs. If you have any other questions you’d like 
+                answered please feel free to email us.
+            </p>
+        </div>
+        <ul id="questions">
+            <li class="question">
+                <div>
+                    <h4>What is Bookmark?</h4>
+                    <img class="faq-button" src="./assets/icon-arrow.svg" alt="">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                </p>
+            </li>
+            <li class="question">
+                <div>
+                    <h4>How can I request a new browser?</h4>
+                    <img class="faq-button" src="./assets/icon-arrow.svg" alt="">
+                </div>
+                <p>
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                    Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                    ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                    Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                </p>
+            </li>
+            
+            <li class="question">
+                <div>
+                    <h4>Is there a mobile app?</h4>
+                    <img class="faq-button" src="./assets/icon-arrow.svg" alt="">
+                </div>
+                <p>
+                    Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                    urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                    sollicitudin ex et ultricies bibendum.
+                </p>
+            </li>
 
+            <li class="question">
+                <div>
+                    <h4>What about other Chromium browsers?</h4>
+                    <img class="faq-button" src="./assets/icon-arrow.svg" alt="">
+                </div>
+                <p>
+                    Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                    vitae neque eget nisl gravida pellentesque non ut velit.
+                </p>
+            </li>
+        </ul>
+        <button class="primary-btn">More info</button>
     </section>
 
-    <section id="login-form">
-
+    <section id="form">
+        <div id="purple-bg"></div>
+        <div>
+            <p>35,000+ already joined</p>
+            <h2>Stay up-to-date with what we're doing</h2>
+        </div>
+        <form>
+            <input type="text" name="email-input" id="input" placeholder="Enter your email address" required>
+            <input type="submit" id="submit-btn" class="primary-btn" value="Contact Us">
+        </form>
     </section>
 
     <footer>
-        <div>
-            <img src="./assets/logo-bookmark.svg"></img>
-            <div class="footer-nav-links">
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">Contact</a>
-            </div>
+        <div id="dark-bg"></div>
+        <img src="./assets/logo-bookmark.png"></img>
+        <div class="footer-nav-links">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
         </div>
-        <div>
+        <div class="icons">
             <img src="./assets/icon-facebook.svg" alt="facebook-icon">
             <img src="./assets/icon-twitter.svg" alt="twitter-icon">
         </div>

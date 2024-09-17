@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="index.js"></script>
+    <title>Bookmark Landing Page</title>
+</head>
+<body>
+    <nav>
+        <img src="./assets/logo-bookmark.svg"></img>
+        <div>
+            <div id="burger-menu">
+                <img src="./assets/icon-hamburger.svg" alt="">
+            </div>
+            <div class="nav-links">
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+                <button>Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero-section">
+        <div class="section-header">
+            <h1>A Simple Bookmark Manager</h1>
+            <p>
+                A clean and simple interface to organize your favourite websites. Open a new 
+                browser tab and see your sites load instantly. Try it for free.
+            </p>
+            <div>
+                <button>
+                    Get it on Chrome
+                </button>
+                <button>
+                    Get it on Firefox
+                </button>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="./assets/illustration-hero.svg" alt="">
+            <div id="hero-section-purple-blob"></div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="section-header">
+            <h2>Features</h2>
+            <p>
+                Our aim is to make it quick and easy for you to access your favourite websites. 
+                Your bookmarks sync between your devices so you can access them on the go.
+            </p>
+        </div>
+
+        <div class="list-tabs">
+            <div onclick="changeTabContent">Simple Bookmarking</div>
+            <div onclick="changeTabContent">Speedy Searching</div>
+            <div onclick="changeTabContent">Easy Sharing</div>
+        </div>
+
+        <div class="features-content">
+            <div class="features-photo">
+                <img src={feature-img} alt={feature-img-alt}>
+                <div id="feature-section-purple-blob"></div>
+            </div>
+            <div class="features-description">
+                <h3>{feature-header}</h3>
+                <p>{feature-desc}</p>
+                <button>More info</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="download-extention">
+
+    </section>
+
+    <section id="faq">
+
+    </section>
+
+    <section id="login-form">
+
+    </section>
+
+    <footer>
+        <div>
+            <img src="./assets/logo-bookmark.svg"></img>
+            <div class="footer-nav-links">
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div>
+            <img src="./assets/icon-facebook.svg" alt="facebook-icon">
+            <img src="./assets/icon-twitter.svg" alt="twitter-icon">
+        </div>
+    </footer>
+</body>
+</html>

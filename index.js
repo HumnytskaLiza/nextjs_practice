@@ -90,12 +90,14 @@ document.addEventListener("DOMContentLoaded", function() {
             navPanel.classList.remove('opened');
         } else {
             navPanel.classList.add('opened');
+            document.body.classList.add('opened-menu');
         }
     })
 
     closeBtn.addEventListener("click", () => {
         if (navPanel.classList.contains('opened')) {
             navPanel.classList.remove('opened');
+            document.body.classList.remove('opened-menu');
         }
     })
 });

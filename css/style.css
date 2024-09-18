@@ -275,18 +275,6 @@ nav .nav-links-mobile.opened > div > div img {
     }
 }
 
-/* LAPTOP */
-
-@media screen and (min-width: 1024px) {
-
-}
-
-/* PC */
-
-@media screen and (min-width: 1440px) {
-
-}
-
 /* ==================== HERO SECTION ==================== */
 
 #hero-section {

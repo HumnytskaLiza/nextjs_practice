@@ -246,6 +246,10 @@ nav .nav-links-mobile.opened > div > div img {
 /* TABLET */
 
 @media screen and (min-width: 768px) {
+    nav {
+        padding: 0px var(--padding-tablet);
+    }
+
     nav #burger-menu {
         display: none;
     }
@@ -272,6 +276,22 @@ nav .nav-links-mobile.opened > div > div img {
     nav .nav-links button:hover {
         background-color: var(--white-clr);
         color: var(--red-clr);
+    }
+}
+
+/* LAPTOP */
+
+@media screen and (min-width: 1024px) {
+    nav {
+        padding: 0px var(--padding-laptop);
+    }
+}
+
+/* PC */
+
+@media screen and (min-width: 1440px) {
+    nav {
+        padding: 0px var(--padding-pc);
     }
 }
 
